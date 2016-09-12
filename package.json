@@ -1,0 +1,26 @@
+{
+    "name": "sml",
+    "displayName": "StandardML",
+    "description": "Support for Standard ML imported from TextMate",
+    "version": "0.0.1",
+    "publisher": "MykolaM",
+    "engines": {
+        "vscode": "^1.4.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sml",
+            "aliases": ["Standard ML", "sml"],
+            "extensions": [".sml",".sig"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "sml",
+            "scopeName": "source.ml",
+            "path": "./syntaxes/StandardML.plist"
+        }]
+    }
+}
